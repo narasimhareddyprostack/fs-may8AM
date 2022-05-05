@@ -1,4 +1,18 @@
 def wish():
-  print("GM")
-  
+    print("GM")
+
+
+wish()
+wish()
+
+
+wish()
+wish()
+wish()
+wish()
+wish()
+wish()
+wish()
+wish()
+wish()
 wish()
