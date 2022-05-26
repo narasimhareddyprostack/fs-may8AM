@@ -1,15 +1,13 @@
 //single line comments
-/* 
+/*
 multiline comments
 multiline comments
- */
+*/
 
-var ename = "Rahul Gandhi";  //variable
-console.log(ename);
+var ename = "Rahul Gandhi"
+console.log(ename)
 
-function add() {
-    console.log("Additions")
-}
 
-class Test {
-}
+
+    <?php include("header.php");?> 
+<?php include("footer.php");?> 
