@@ -1,12 +1,14 @@
-import Airtel from './Airtel'
-function App() {
-    return <div>
-
-        <h1>GM</h1>
-        <h1>GA</h1>
-        <h1>GN</h1>
-        <hr />
-        <Airtel />
-    </div>
+import React from 'react'
+import CompA from './UI/CompA'
+import Navbar from './Components/Navbar/Navbar'
+class App extends React.Component {
+    render() {
+        return <div>
+            <Navbar />
+            <h1>App Class Component</h1>
+            <hr />
+            <CompA />
+        </div>
+    }
 }
 export default App
