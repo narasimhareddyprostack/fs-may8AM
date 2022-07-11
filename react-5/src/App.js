@@ -1,12 +1,16 @@
-import React, { Component } from 'react'
-import Message from './Message/Message'
-class App extends Component {
+import React from 'react'
+import Navbar from './Navbar/Navbar'
+import Counter from './Counter/Counter'
+import Product from './Product/Product'
+import Salary from './Salary/Salary'
+class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>App Component</h1>
-                <hr />
-                <Message />
+                <Navbar />
+                {/*  <Product /> */}
+                <Salary />
+
             </div>
         )
     }
