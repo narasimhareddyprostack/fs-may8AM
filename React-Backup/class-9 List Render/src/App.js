@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import Login from './FormHandling/Login'
+import Data from './Component/Data'
 
 class App extends React.Component {
     render() {
         return (
             <div>
                 <Navbar />
-                <Login />
+                <Data />
             </div>
         )
     }
