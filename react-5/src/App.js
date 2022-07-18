@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Navbar from './Navbar/Navbar'
-import Login from './FormHandling/Login'
-import Registration from './FormHandling/Registration'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-class App extends React.Component {
+import Home from './components/Home'
+import About from './components/About'
+import Service from './components/Services'
+import Contact from './components/Contact'
+class App extends Component {
     render() {
         return (
             <div>
-                <Navbar />
-                <Registration />
+                <Router>
+                    <Navbar />
+                    <Switch>
+                        <Route path="/home" component={Home} />
+                        <Route path="/about" component={About} />
+                        <Route path="/service" component={Service} />
+                        <Route path="/contact" component={Contact} />
+                    </Switch>
+                </Router>
             </div>
         )
     }
