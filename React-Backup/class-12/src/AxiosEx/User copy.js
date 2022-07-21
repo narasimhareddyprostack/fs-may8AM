@@ -1,13 +1,11 @@
 import Axios from 'axios'
 import React from 'react'
-
 class User extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             users: []
-        }
-
+    }
     }
     get_Users = () => {
         console.log("test Case 123")

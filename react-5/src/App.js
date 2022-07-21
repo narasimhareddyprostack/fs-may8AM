@@ -1,10 +1,14 @@
-import Show from './CondRendering/Show'
-import User from './AxiosEx/User'
+import Navbar from './Navbar/Navbar'
+import ContactApp from './Contact/ContactApp'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 let App = () => {
-
     return <>
-        <h1>App Component</h1>
-        <User />
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/contact" element={<ContactApp />} />
+            </Routes>
+        </Router>
     </>
 }
 export default App
