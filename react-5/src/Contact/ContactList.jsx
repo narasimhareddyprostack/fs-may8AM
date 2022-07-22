@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
 class ContactList extends Component {
+    selectedContact = (contact) => {
+        this.props.get_Selected_Contact(contact)
+        //console.log(contact.name.first)
+    }
     render() {
         return (
             <div className="container">
@@ -16,9 +20,9 @@ class ContactList extends Component {
                             <tbody>
                                 {
                                     this.props.contacts.map((contact, index) => {
-                                        return <tr key={contact.login.uuid}>
+                                        return <tr onMouseOver={this.selectedContact.bind(this, contact)} key={contact.login.uuid}>
                                             <td>{contact.login.uuid.slice(-4)}</td>
-                                            <td>{contact.name.first}</td>
+                                            <td><button>{contact.name.first}</button></td>
                                         </tr>
                                     })
                                 }
