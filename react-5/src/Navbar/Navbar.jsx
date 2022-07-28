@@ -12,6 +12,12 @@ class Navbar extends Component {
                     <li className="nav-item">
                         <Link className="nav-link" to="/contact">Contact</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/message">Message-Ex</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/counter">Counter-Ex</Link>
+                    </li>
                 </ul>
             </div>
 
