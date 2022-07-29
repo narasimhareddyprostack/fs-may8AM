@@ -1,28 +1,12 @@
-import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-class Navbar extends Component {
-    render() {
-        return <nav className="navbar navbar-dark bg-dark navbar-expand-lg"  >
-            <Link to="/" className="navbar-brand">Class Component Life Cycle Methods</Link>
-            <div className="ml-auto">
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/clock">Clock</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/contact">Contact</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/message">Message-Ex</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/counter">Counter-Ex</Link>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-    }
+let Navbar = () => {
+    return <nav className="navbar navbar-dark bg-dark">
+        <Link to="#" className="navbar-brand">Redux Example</Link>
+        <div className="ml-auto">
+            <ul className="navbar-nav">
+                <li className="nav-list"> <Link className="nav-link" to="/message">Message</Link></li>
+            </ul>
+        </div>
+    </nav>
 }
-
 export default Navbar
