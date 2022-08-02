@@ -4,8 +4,8 @@ let Navbar = () => {
         <Link to="#" className="navbar-brand">Redux Example</Link>
         <div className="ml-auto">
             <ul className="navbar-nav">
-                <li className="nav-list"> <Link className="nav-link" to="/users">Users</Link></li>
-
+                <li className="nav-list"> <Link className="nav-link" to="/message">Message</Link></li>
+                <li className="nav-list"> <Link className="nav-link" to="/counter">Counter</Link></li>
             </ul>
         </div>
     </nav>
